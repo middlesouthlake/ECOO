@@ -1,0 +1,18 @@
+dp[i][j]: the minimal sum when schools i & j are selected for the semi-final locations
+dp[i][j] = min(dp[i][j-1]
+
+
+dp[i][j] = max(dp[i][j-1], dp[i-1][jj]+price[j]-price[jj])
+     * 			= max(dp[i][j-1], price[j]+max(dp[i-1][jj]-price[jj])
+     * 
+     * dp[0][j] = 0;
+     * dp[i][0] = 0;  
+
+
+dp[i]: the minimal sum of i schools, the selected nodes are s1 and s2;
+dp[i] = dp[i-1]+min(distance(si1,i), distance(si2,i)) or
+		dp[j]+min(distance(sj1, i), distance(sj2,i)) or
+		(assume the distance(s1,i)>distance(s2,i), then
+		sum of all schools which are connected to s2 before, 
+		and all schools which connect to s1, but distance to s1 is greater than 
+		the distance to i;

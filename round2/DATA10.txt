@@ -1,0 +1,20 @@
+3 6
+WW G
+WG G
+GW W
+GG W
+GWG
+*
+3 4
+WW W
+WG W
+GW G
+GG G
+GGW
+*
+8 6
+WW G
+WG G
+GW W
+GG W
+GWGWGGWW
